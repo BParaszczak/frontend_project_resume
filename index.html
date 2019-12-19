@@ -9,13 +9,7 @@
     <title>Frontend Project - Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap"
         rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
 
 </head>
@@ -30,7 +24,7 @@
                 <img src="assets/images/desktop-logo.png" alt="Arlo Logo" />
             </div>
             <div>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
@@ -40,13 +34,13 @@
                 </ul>
             </div>
             <div>a/</div>
-            <div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <div class="social">
+                <ul class="social-icons">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://behance.net"><i class="fab fa-behance"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -54,22 +48,29 @@
         <!-- HOME -->
 
         <section id="home">
-            <div>
-                <img src="" />
+            <!-- <img src="assets/images/2home.jpg" alt="Mountain view" /> -->
+            <div class="author">
+                <div id="author-photo">
+                    <img src="assets/images/img_home.jpg" alt="Author photo" />
+                </div>
+                <div>
+                    <h1>Alan <span>Michaelis</span></h1>
+                    <p>
+                        <span>I'm a &nbsp;</span>
+                        <span class="typed" data-period="2000"
+                            data-type='[ "Freelancer", "Web Designer", "UI/UX Developer"]'>
+                            <span class="wrap"></span>
+                    </p>
+                </div>
+                <div>
+                    <a href=""></a>
+                </div>
             </div>
-            <div>
-                <h1>Beata Paraszczak</h1>
-                <p>
-                    <span></span>
-                    <span></span>
-                </p>
+            <div class="go-up">
+                <a href="#"></a>
             </div>
-            <div>
-                <a href=""></a>
-            </div>
-            <div>
-                <a href=""> Do góry</a>
-            </div>
+
+
         </section>
 
         <!-- ABOUT -->
@@ -118,8 +119,16 @@
 
         </section>
     </div>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="assets/js/axios.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+
+
+
+
 
 </body>
 

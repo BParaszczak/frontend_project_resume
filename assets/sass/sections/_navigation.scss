@@ -1,8 +1,104 @@
 nav {
     width: 300px;
+    height: 100vh;
+    background-color: #041230;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
 
-}
+    .logo {
+        height: 225px;
+        width: 100%;
+        padding: 50px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
 
-img {
-    position
+        img {
+            padding: 0 80px;
+            justify-self: center;
+            align-items: center;
+        }
+    }
+
+    .nav-list {
+
+        font-size: 16px;
+        font-weight: 500;
+        list-style-type: none;
+        text-transform: uppercase;
+        padding: 30px 20px 30px 60px;
+        width: 220px;
+        height: 288px;
+        line-height: 1.8;
+
+        li {
+            padding: 10px 0;
+
+            a {
+                position: relative;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            a::after {
+                content: ' ';
+                margin: 0;
+                position: absolute;
+                display: flex;
+                height: 2px;
+                width: 0px;
+                background-color: #e3872d;
+                transform: translateY(-50%);
+                bottom: 8px;
+                left: 120%;
+                transition: .3s all;
+
+            }
+
+            a:hover {
+                color: #e3872d;
+            }
+
+            a:hover::after {
+                margin: 0;
+                width: 40px;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        align-content: flex-end;
+
+        .social-icons {
+            background-color: green;
+            display: flex;
+            width: 300px;
+            height: 50px;
+            list-style: none;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            padding: 12px 40px;
+
+            li {
+
+                width: 30px;
+                height: 30px;
+
+
+                a {
+                    display: block;
+                    position: relative;
+                    width: 22px;
+                    height: 22px;
+                    font-family: 'Font Awesome 5 Brands';
+                    font-weight: 900;
+                    background-color: blue;
+                    color: #fff;
+                    font-size: 12px;
+
+                }
+            }
+        }
+    }
 }

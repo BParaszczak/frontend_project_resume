@@ -1,15 +1,17 @@
-@import "/assets/sass/includes/mixins";
-@import "/assets/sass/includes/normalize";
-@import "/assets/sass/includes/variables";
-@import "/assets/sass/sections/about";
-@import "/assets/sass/sections/contact";
-@import "/assets/sass/sections/home";
-@import "/assets/sass/sections/navigation";
-@import "/assets/sass/sections/news";
-@import "/assets/sass/sections/portfolio";
-@import "/assets/sass/sections/services";
+@import "includes/mixins";
+@import "includes/normalize";
+@import "includes/variables";
+@import "sections/about";
+@import "sections/contact";
+@import "sections/home";
+@import "sections/navigation";
+@import "sections/news";
+@import "sections/portfolio";
+@import "sections/services";
 
 body {
     font-family: $mainTextFont;
-    background: grey;
+    box-sizing: border-box;
+
+    #wrapper {}
 }
