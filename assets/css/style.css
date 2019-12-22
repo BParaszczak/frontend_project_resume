@@ -610,7 +610,7 @@ nav .navigation .nav-list {
   font-weight: 500;
   list-style-type: none;
   text-transform: uppercase;
-  padding: 30px 20px 30px 60px;
+  padding: 20px 20px 30px 60px;
   line-height: 1.8;
 }
 
@@ -649,6 +649,23 @@ nav .navigation .nav-list li a:hover {
 nav .navigation .nav-list li a:hover::after {
   margin: 0;
   width: 40px;
+}
+
+nav .nav-min {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #e3872d;
+  margin: auto 0 50px 270px;
+}
+
+nav .nav-min a {
+  position: absolute;
+}
+
+nav .nav-min a i {
+  color: #fff;
 }
 
 nav .social {
@@ -691,7 +708,7 @@ nav .social .social-icons li a {
   border: 1px solid green;
   color: #fff;
   font-size: 14px;
-  font-family: 'Font Awesome 5 Brands';
+  font-family: 'Font Awesome/ 5 Brands';
 }
 
 #services {
@@ -714,6 +731,7 @@ nav .social .social-icons li a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin: 0 0 50px 0;
 }
 
 #services .header h2 {
@@ -731,7 +749,7 @@ nav .social .social-icons li a {
 }
 
 #services .list-wrapper {
-  width: 85%;
+  width: 100%;
 }
 
 #services .list-wrapper .boxes {
@@ -739,18 +757,19 @@ nav .social .social-icons li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #services .list-wrapper .boxes li {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 360px;
+  height: 280px;
+  margin: 15px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px 40px 33px 40px;
@@ -759,12 +778,27 @@ nav .social .social-icons li a {
 }
 
 #services .list-wrapper .boxes li i {
-  position: absolute;
-  width: 40px;
-  height: 40px;
   color: #e3872d;
-  font-size: 24px;
+  font-size: 40px;
   border: 1px solid green;
+}
+
+#services .list-wrapper .boxes li h5 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 20px 0;
+}
+
+#services .list-wrapper .boxes li p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
+#services .list-wrapper .boxes li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 body {

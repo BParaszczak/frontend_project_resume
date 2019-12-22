@@ -11,6 +11,7 @@
         border-left: 6px solid #e3872d;
         color: #000;
         align-self: center;
+        margin: 0 0 50px 0;
 
 
         h2 {
@@ -30,35 +31,46 @@
     }
 
     .list-wrapper {
-        width: 85%;
+        width: 100%;
 
         .boxes {
             list-style: none;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
 
 
             li {
                 position: relative;
-                width: 100%;
-                height: auto;
+                width: 360px;
+                height: 280px;
+                margin: 15px;
                 box-shadow: 0 0 20px rgba(0, 0, 0, .1);
                 padding: 40px 40px 33px 40px;
                 transition: all 0.3s;
 
                 i {
-                    position: absolute;
-                    width: 40px;
-                    height: 40px;
                     color: #e3872d;
-                    font-size: 24px;
+                    font-size: 40px;
                     border: 1px solid green; //do usunięcia
                 }
 
-                h5 {}
+                h5 {
+                    font-size: 22px;
+                    font-weight: 600;
+                    letter-spacing: .5px;
+                    margin: 20px 0;
+                }
 
-                p {}
+                p {
+                    font-size: 14px;
+                    letter-spacing: 0.5px;
+                    line-height: 1.8;
+                }
+            }
+
+            li:hover {
+                transform: translateY(-5px);
             }
         }
     }

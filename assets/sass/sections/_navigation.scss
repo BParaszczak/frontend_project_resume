@@ -33,7 +33,7 @@ nav {
             font-weight: 500;
             list-style-type: none;
             text-transform: uppercase;
-            padding: 30px 20px 30px 60px;
+            padding: 20px 20px 30px 60px;
             line-height: 1.8;
 
 
@@ -73,6 +73,23 @@ nav {
         }
     }
 
+    .nav-min {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: #e3872d;
+        margin: auto 0 50px 270px;
+
+        a {
+            position: absolute;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
     .social {
         display: flex;
         align-self: flex-end;
@@ -104,7 +121,7 @@ nav {
                     border: 1px solid green;
                     color: #fff;
                     font-size: 14px;
-                    font-family: 'Font Awesome 5 Brands';
+                    font-family: 'Font Awesome/ 5 Brands';
 
                     // .fa-facebook-f,
                     // .fa-twitter,
