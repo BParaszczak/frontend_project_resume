@@ -123,8 +123,12 @@ nav {
                     font-size: 14px;
                     font-family: 'Font Awesome/ 5 Brands';
 
+
                     // .fa-facebook-f,
-                    // .fa-twitter,
+                    .fa-twitter {
+                        content: '\f099';
+                    }
+
                     // .fa-linkedin-in,
                     // .fa-instagram,
                     // .fa-behance {

@@ -9,6 +9,7 @@
     <title>Frontend Project - Resume</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap"
         rel="stylesheet">
@@ -42,6 +43,7 @@
             </div>
             <div class="social">
                 <ul class="social-icons">
+                    <!--font awesome się nie pokazują w żadnym miejscu - sprawdzić, czy w sass nie trzeba inaczej-->
                     <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></a></i></li>
                     <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
@@ -55,6 +57,7 @@
         <!-- HOME -->
 
         <section id="home">
+            <canvas class="background"></canvas>
             <!-- <img src="assets/images/2home.jpg" alt="Mountain view" /> -->
             <div class="author">
                 <div id="author-photo">
@@ -213,30 +216,61 @@
         <!-- PORTFOLIO -->
 
         <section id="portfolio">
+            <div class="header">
+                <h2>Creative works</h2>
+                <p>Check out our latest creative works</p>
+            </div>
+            <br />
+
+            <div class="portfolio-list">
+                <ul>
+                    <li>
+                        <a href="#" data-filter="*">All</a>
+                    </li>
+                    <li>
+                        <a href="#" data-filter=".design">Design</a>
+                    </li>
+                    <li>
+                        <a href="#" data-filter=".photography">Photography</a>
+                    </li>
+                    <li>
+                        <a href="#" data-filter=".development">Development</a>
+                    </li>
+                </ul>
+            </div>
+
 
         </section>
 
         <!-- NEWS -->
 
         <section id="news">
+            <div class="header">
+                <h2>Latest news</h2>
+                <p>Check out our latest news</p>
+            </div>
+            <br />
 
         </section>
 
         <!-- CONTACT -->
 
         <section id="contact">
+            <div class="header">
+                <h2>Contact me</h2>
+                <p>Get in touch with me</p>
+            </div>
+            <br />
 
         </section>
-        <//div> <script src="assets/js/jquery-3.4.1.min.js">
-        </script>
-        <script src="assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script src="assets/js/axios.min.js"></script>
-        <script src="assets/js/typed.js"></script>
-
-
-
-
+    </div>
+    <script src="assets/js/jquery-3.4.1.min.js">
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="assets/js/axios.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/typed.js"></script>
 
 </body>
 
