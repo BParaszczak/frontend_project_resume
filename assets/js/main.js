@@ -54,3 +54,7 @@ window.onload = function () {
     css.innerHTML = ".typed > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+window.onload = function () { Particles.init({ selector: '.background' }); };
+
+

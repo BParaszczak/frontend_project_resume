@@ -5,6 +5,7 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     .logo {
         height: 225px;
@@ -19,58 +20,81 @@ nav {
         }
     }
 
-    .nav-list {
-
-        font-size: 16px;
-        font-weight: 500;
-        list-style-type: none;
-        text-transform: uppercase;
-        padding: 30px 20px 30px 60px;
+    .navigation {
         width: 220px;
         height: 288px;
-        line-height: 1.8;
+        display: flex;
+        justify-self: flex-start;
 
-        li {
-            padding: 10px 0;
 
-            a {
-                position: relative;
-                text-decoration: none;
+        .nav-list {
+
+            font-size: 16px;
+            font-weight: 500;
+            list-style-type: none;
+            text-transform: uppercase;
+            padding: 20px 20px 30px 60px;
+            line-height: 1.8;
+
+
+            li {
+                padding: 10px 0;
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                a::after {
+                    content: ' ';
+                    margin: 0;
+                    position: absolute;
+                    display: flex;
+                    height: 2px;
+                    width: 0px;
+                    background-color: #e3872d;
+                    transform: translateY(-50%);
+                    bottom: 8px;
+                    left: 120%;
+                    transition: .3s all;
+
+                }
+
+                a:hover {
+                    color: #e3872d;
+                }
+
+                a:hover::after {
+                    margin: 0;
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    .nav-min {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: #e3872d;
+        margin: auto 0 50px 270px;
+
+        a {
+            position: absolute;
+
+            i {
                 color: #fff;
-            }
-
-            a::after {
-                content: ' ';
-                margin: 0;
-                position: absolute;
-                display: flex;
-                height: 2px;
-                width: 0px;
-                background-color: #e3872d;
-                transform: translateY(-50%);
-                bottom: 8px;
-                left: 120%;
-                transition: .3s all;
-
-            }
-
-            a:hover {
-                color: #e3872d;
-            }
-
-            a:hover::after {
-                margin: 0;
-                width: 40px;
             }
         }
     }
 
     .social {
         display: flex;
-        align-content: flex-end;
+        align-self: flex-end;
 
         .social-icons {
-            background-color: green;
             display: flex;
             width: 300px;
             height: 50px;
@@ -79,6 +103,8 @@ nav {
             justify-content: space-around;
             align-content: center;
             padding: 12px 40px;
+            margin: 0 0 40px 0;
+
 
             li {
 
@@ -86,17 +112,28 @@ nav {
                 height: 30px;
 
 
+
                 a {
                     display: block;
-                    position: relative;
                     width: 22px;
                     height: 22px;
-                    font-family: 'Font Awesome 5 Brands';
-                    font-weight: 900;
-                    background-color: blue;
+                    font-weight: normal;
+                    border: 1px solid green;
                     color: #fff;
-                    font-size: 12px;
+                    font-size: 14px;
+                    font-family: 'Font Awesome/ 5 Brands';
 
+
+                    // .fa-facebook-f,
+                    .fa-twitter {
+                        content: '\f099';
+                    }
+
+                    // .fa-linkedin-in,
+                    // .fa-instagram,
+                    // .fa-behance {
+
+                    // }
                 }
             }
         }
